@@ -119,36 +119,6 @@ Then open:
 
 ---
 
-## Demo Script (for Hackathons)
-
-Use this sequence during judging:
-
-1. **Open dashboard**
-   - Show summary tiles and the per‑doctor queue cards.
-   - Point out “Patients Waiting”, “Avg Predicted Wait”, “Doctors Available”, and the “AI Suggestion” panel.
-
-2. **Add a new patient**
-   - Click **+ Add Patient**.
-   - Enter patient details (age, reason, department, priority) and submit.
-   - Show the new patient appearing in the correct doctor’s queue with an estimated consult time and predicted wait.
-
-3. **Demonstrate AI complexity tagging**
-   - Add a patient with a reason like *“Chest discomfort and shortness of breath”*.
-   - Highlight the **High complexity** badge and explain that certain red‑flag symptoms and older age automatically flag cases as complex.
-
-4. **Show load balancing**
-   - Overload one General OPD doctor with a few Normal priority patients.
-   - Show how the **AI Suggestion** proposes moving a patient to another General OPD doctor and how it reduces their wait (before vs after).
-   - Click **Apply Suggestion** and point out the updated queues.
-
-5. **Doctor workflow**
-   - Click **Next Patient** on a doctor card.
-   - Show the top patient being removed from the queue and the remaining patients’ predicted waits updating.
-
-This gives judges a clear, narrative walkthrough of the value: shorter waits, smarter triage, and a simple UI nurses or coordinators can actually use.
-
----
-
 ## Configuration
 
 For this MVP:
