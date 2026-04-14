@@ -1,0 +1,42 @@
+<!-- backend/app/templates/add_patient.html -->
+{% extends "base.html" %}
+{% block content %}
+<h4 class="mb-3">Register New Patient</h4>
+
+<form method="post" action="/add" class="card p-3">
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <label class="form-label">Name</label>
+      <input class="form-control" name="patient_name" required>
+    </div>
+    <div class="col-md-2">
+      <label class="form-label">Age</label>
+      <input type="number" class="form-control" name="age" min="0" max="120" required>
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Priority</label>
+      <select class="form-select" name="priority">
+        {% for pr in priorities %}
+          <option value="{{ pr.value }}">{{ pr.value }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Reason</label>
+    <textarea class="form-control" name="reason" rows="2" required></textarea>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Assign Doctor</label>
+    <select class="form-select" name="assigned_doctor_id">
+      {% for d in doctors %}
+        <option value="{{ d.id }}">{{ d.name }} – {{ d.department }}</option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <button class="btn btn-primary">Add to Queue</button>
+</form>
+{% endblock %}
