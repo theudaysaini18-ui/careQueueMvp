@@ -109,6 +109,10 @@ def suggest_rebalance(
         )
         wait_after = load_at_target  # time until they are seen
 
+        # Only suggest if the patient actually benefits
+        if wait_after >= wait_before:
+                continue   # this move makes things worse, skip it
+
         return {
             "patient_id": movable.id,
             "patient_name": movable.patient_name,
