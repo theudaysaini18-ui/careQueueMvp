@@ -1,6 +1,6 @@
 # CareQueue – AI‑Assisted OPD Control Panel
 
-CareQueue is a hackathon‑ready MVP that helps outpatient departments manage doctor queues with AI‑assisted consult time estimation and intra‑department load balancing, built on FastAPI and Jinja2 templates.[web:144]
+CareQueue is a MVP that helps outpatient departments manage doctor queues with AI‑assisted consult time estimation and intra‑department load balancing, built on FastAPI and Jinja2 templates.[web:144]
 
 ---
 
